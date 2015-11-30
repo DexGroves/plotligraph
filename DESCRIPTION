@@ -1,0 +1,8 @@
+Package: plotligraph
+Title: 3D graphs powered by plotly
+Version: 0.0.0.9000
+Authors@R: person("Dex", "Groves", email = "dex.groves@gmail.com", role = c("aut", "cre"))
+Description: Hacks plotly to draw a 3D graph of an igraph object.
+Depends: R (>= 3.2)
+License: GPL (>=2)
+LazyData: true

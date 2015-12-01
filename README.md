@@ -5,6 +5,8 @@ Hacks with `plotly` to trick it into producing a rotatable, pannable and zoomabl
 [that will look something like this.](https://rawgit.com/dexgroves/plotligraph/html/index.html)
 
 ## Disclaimer
+OpenGL seems to render badly in Linux, and even worse inside VMs.
+
 Due to forces beyond control, `plotligraph` will generate one `brewer.pal` warning per edge. Don't worry about it.
 
 ## How to plot

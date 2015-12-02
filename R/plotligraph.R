@@ -27,7 +27,7 @@ plotligraph <- function(graph_obj, layout = NA, ...) {
                        title = "")              # These last two do nothing
 
   edge_df <- get_edge_df(graph_obj)
-  vertices <- as.character(V(graph_obj))
+  vertices <- get.vertex.attribute(graph_obj, "name")
 
   if (is.na(layout)) {
     layout <- layout.fruchterman.reingold(graph_obj, dim = 3)
@@ -39,7 +39,7 @@ plotligraph <- function(graph_obj, layout = NA, ...) {
           type="scatter3d",
           mode="markers",
           hoverinfo = "text",
-          text = get.edge.attribute(graph_obj, "name"),
+          text = get.vertex.attribute(graph_obj, "name"),
           ...) %>%
     add_edge_traces(links) %>%
     layout(scene = list(xaxis = axis_options,
